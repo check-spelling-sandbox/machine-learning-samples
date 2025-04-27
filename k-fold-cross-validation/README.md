@@ -33,7 +33,7 @@ If you are a Python 2 developer and do not already have `virtualenv` and `pip` t
 	sudo apt-get update
 	sudo apt-get install python-pip python-virtualenv
 
-Users of other operating systems and package managers can learn more about [installing `pip`](http://pip.readthedocs.org/en/stable/installing/), and about installing `virtualenv` [here](http://virtualenv.readthedocs.org/en/latest/installation.html).
+Users of other operating systems and package managers can learn more about [installing `pip`](http://pip.readthedocs.org/en/stable/installing/), and about [installing `virtualenv`](http://virtualenv.readthedocs.org/en/latest/installation.html).
 
 After you’ve installed the `virtualenv` and `pip` tools, run:
 
