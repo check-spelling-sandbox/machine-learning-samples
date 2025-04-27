@@ -14,7 +14,7 @@
 """
 Utility to call Amazon Kinesis stream using payload from a file that contains line
 separated json. This script is used in conjunction with
-create-lambda-function.py, which expectes the Kinesis stream to provide the
+create-lambda-function.py, which expects the Kinesis stream to provide the
 input on which predictions are made. All json data being pushed to kinesis is
 first converted to string to string key value pairs as that is the expected
 format by Amazon Machine Learning.
