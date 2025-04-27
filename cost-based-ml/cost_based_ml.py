@@ -37,7 +37,7 @@ def batch_prediction_data_bucket_key(output_uri_s3, batch_prediction_id):
 	key += "batch-prediction/result/{}-{}.gz".format(batch_prediction_id, datasource_filename)
 	return bucket, key
 
-# read batch prediction results from S3 and turn them into an numpy array
+# read batch prediction results from S3 and turn them into a numpy array
 def read_test_predictions(bucket, key):
 	s3 = boto3.resource('s3')
 	obj = s3.Object(bucket, key)
