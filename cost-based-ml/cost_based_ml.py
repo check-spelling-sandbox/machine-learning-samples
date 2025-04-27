@@ -52,7 +52,7 @@ def read_test_predictions(bucket, key):
 	data = np.loadtxt(StringIO(predictions_str), dtype = {'names': names, 'formats': formats}, delimiter=',', skiprows=1, usecols=cols)
 	return data
 
-# this historgram replicates what the Amazon ML console is showing for model evaluation
+# this histogram replicates what the Amazon ML console is showing for model evaluation
 def plot_class_histograms(score_n_true_label):
 	class_1_scores = [score for (score, true_label) in score_n_true_label if true_label == 1]
 	class_0_scores = [score for (score, true_label) in score_n_true_label if true_label == 0]
