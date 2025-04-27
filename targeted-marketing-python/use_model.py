@@ -17,7 +17,7 @@ and kicks off a batch prediction job, which uses the ML Model to
 generate predictions on new data.  This script needs the id of the 
 ML Model to use.  It also requires the score threshold.
 
-Useage:
+Usage:
     python use_model.py ml_model_id score_threshold s3_output_url
 
 For example:
