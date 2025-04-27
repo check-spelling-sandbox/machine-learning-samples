@@ -22,7 +22,7 @@ or specified manually with the convention:
   ev = evaluation
   bp = batch prediction
 
-Useage:
+Usage:
     python wait_for_entity.py entity_id [entity_type]
 """
 import boto
