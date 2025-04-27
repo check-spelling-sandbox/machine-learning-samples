@@ -119,7 +119,7 @@ if __name__ == "__main__":
     kfolds = len(eval_id_list)
     eval_auc_map = collect_perf(eval_id_list)  # start polling & collect
 
-    # Comput the mean/variance of auc scores. Casting kfolds to float for
+    # Compute the mean/variance of auc scores. Casting kfolds to float for
     # Python 2 compatibility.
     avg_auc = sum([x for x in eval_auc_map.values()]) / float(kfolds)
     var_auc = sum([(x - avg_auc) ** 2 for x in eval_auc_map.values()]) / float(
