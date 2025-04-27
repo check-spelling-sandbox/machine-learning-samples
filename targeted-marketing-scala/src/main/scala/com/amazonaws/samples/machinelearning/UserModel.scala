@@ -14,13 +14,13 @@ import scala.io.Source
  * to make batch predictions.
  *
  * command-line arguments:
- * mlModelid scoreThreshhold s3://url-where-output-should-go
+ * mlModelid scoreThreshold s3://url-where-output-should-go
  */
 object UserModel extends App {
   val unscoredDataUrl = "s3://aml-sample-data/banking-batch.csv"
   val dataSchema = getClass.getResourceAsStream("/banking-batch.csv.schema")
 
-  require(args.length == 3, "command-line arguments: mlModelid scoreThreshhold s3://url-where-output-should-go")
+  require(args.length == 3, "command-line arguments: mlModelid scoreThreshold s3://url-where-output-should-go")
   val mlModelId = args(0)
   val threshold = args(1).toFloat
   val s3OutputUrl = args(2)
