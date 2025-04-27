@@ -54,7 +54,7 @@ public class UseModel {
     /**
      * @param args command-line arguments:
      *   mlModelid
-     *   score threshhold
+     *   score threshold
      *   s3:// url where output should go
      */
     public UseModel(String[] args) {
