@@ -217,7 +217,7 @@ This script requires that `config.py` is present and contains
 appropriate values. Description of the configuration required in
 `config.py` is as follows:
 
-* *awsAccountId* : The AWS Account Id corresponding to the credentials being used
+* *awsAccountId* : The AWS Account ID corresponding to the credentials being used
   with boto. See [docs](http://docs.aws.amazon.com/general/latest/gr/acct-identifiers.html)
   for details.
 * *kinesisStream* : The name being given to the Kinesis stream. See
